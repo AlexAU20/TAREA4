@@ -13,7 +13,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 Tanto las bases de datos de la cantidad de especies y las ASP fueron birndados por el profesor.Ademas se cargo una capa raster con la base de datos "WorldClim" para visualizar la altitud del pais.
 
-```{r message=TRUE, warning=TRUE}
+```{r message=FALSE, warning=FALSE}
 library(sf)
 library(raster)
 library(dplyr)
@@ -90,7 +90,7 @@ asp_registros <-
 
 El siguiente mapa muestra la cantidad de especies de orquideas en Costa rica repartidas en diferentes Areas Silvestres Protegidas (ASP) del pais.
 
-```{r message=TRUE, warning=TRUE}
+```{r message=FALSE, warning=FALSE}
 ## popups
 
 pasp <- paste0("<b>", "Area protegia: ","</b>",
